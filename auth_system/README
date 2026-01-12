@@ -1,0 +1,27 @@
+# Кастомная система аутентификации и авторизации
+
+## Описание
+Backend-приложение реализует собственную систему:
+- аутентификации (token-based)
+- авторизации (RBAC)
+без использования стандартных механизмов Django permissions и groups.
+
+## Реализовано
+- Регистрация, login, logout
+- Мягкое удаление пользователя
+- RBAC: роли → права → ресурсы и действия
+- 401 / 403 обработка
+- Admin API для управления доступом
+- Mock бизнес-ресурсы
+
+## Стек
+- Python 3.11
+- Django + DRF
+- PostgreSQL
+
+## Запуск
+```bash
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py loaddata rbac
+python manage.py runserver

@@ -1,0 +1,242 @@
+[
+    {
+        "model": "rbac.role",
+        "pk": 1,
+        "fields": {
+            "name": "admin",
+            "description": "Administrator role with full access"
+        }
+    },
+    {
+        "model": "rbac.role",
+        "pk": 2,
+        "fields": {
+            "name": "user",
+            "description": "Regular user role with limited access"
+        }
+    },
+    {
+        "model": "rbac.role",
+        "pk": 3,
+        "fields": {
+            "name": "guest",
+            "description": "Guest role with minimal access"
+        }
+    },
+    {
+        "model": "rbac.resource",
+        "pk": 1,
+        "fields": {
+            "code": "products",
+            "description": "Product management resource"
+        }
+    },
+    {
+        "model": "rbac.resource",
+        "pk": 2,
+        "fields": {
+            "code": "orders",
+            "description": "Order management resource"
+        }
+    },
+    {
+        "model": "rbac.resource",
+        "pk": 3,
+        "fields": {
+            "code": "rbac",
+            "description": "RBAC management resource"
+        }
+    },
+    {
+        "model": "rbac.action",
+        "pk": 1,
+        "fields": {
+            "code": "read",
+            "description": "Read action"
+        }
+    },
+    {
+        "model": "rbac.action",
+        "pk": 2,
+        "fields": {
+            "code": "write",
+            "description": "Write/Create action"
+        }
+    },
+    {
+        "model": "rbac.action",
+        "pk": 3,
+        "fields": {
+            "code": "delete",
+            "description": "Delete action"
+        }
+    },
+    {
+        "model": "rbac.action",
+        "pk": 4,
+        "fields": {
+            "code": "assign_role",
+            "description": "Assign role action"
+        }
+    },
+    {
+        "model": "rbac.permission",
+        "pk": 1,
+        "fields": {
+            "resource": 1,
+            "action": 1
+        }
+    },
+    {
+        "model": "rbac.permission",
+        "pk": 2,
+        "fields": {
+            "resource": 1,
+            "action": 2
+        }
+    },
+    {
+        "model": "rbac.permission",
+        "pk": 3,
+        "fields": {
+            "resource": 1,
+            "action": 3
+        }
+    },
+    {
+        "model": "rbac.permission",
+        "pk": 4,
+        "fields": {
+            "resource": 2,
+            "action": 1
+        }
+    },
+    {
+        "model": "rbac.permission",
+        "pk": 5,
+        "fields": {
+            "resource": 2,
+            "action": 2
+        }
+    },
+    {
+        "model": "rbac.permission",
+        "pk": 6,
+        "fields": {
+            "resource": 2,
+            "action": 3
+        }
+    },
+    {
+        "model": "rbac.permission",
+        "pk": 7,
+        "fields": {
+            "resource": 3,
+            "action": 4
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 1,
+        "fields": {
+            "role": 1,
+            "permission": 1
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 2,
+        "fields": {
+            "role": 1,
+            "permission": 2
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 3,
+        "fields": {
+            "role": 1,
+            "permission": 3
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 4,
+        "fields": {
+            "role": 1,
+            "permission": 4
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 5,
+        "fields": {
+            "role": 1,
+            "permission": 5
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 6,
+        "fields": {
+            "role": 1,
+            "permission": 6
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 7,
+        "fields": {
+            "role": 1,
+            "permission": 7
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 8,
+        "fields": {
+            "role": 2,
+            "permission": 1
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 9,
+        "fields": {
+            "role": 2,
+            "permission": 2
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 10,
+        "fields": {
+            "role": 2,
+            "permission": 4
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 11,
+        "fields": {
+            "role": 2,
+            "permission": 5
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 12,
+        "fields": {
+            "role": 3,
+            "permission": 1
+        }
+    },
+    {
+        "model": "rbac.rolepermission",
+        "pk": 13,
+        "fields": {
+            "role": 3,
+            "permission": 4
+        }
+    }
+]
